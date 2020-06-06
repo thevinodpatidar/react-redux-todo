@@ -29,7 +29,7 @@ const App = () => (
             <Route path='/' exact={true} component={LoginPage} />
             <Route path='/login' component={LoginPage} />
             <Route path='/register' component={RegisterPage} />
-            <PrivateRoute path='/dashboard' component={DashboardPage} />
+            <Route path='/dashboard' component={DashboardPage} />
           </Switch>
         </div>
       </BrowserRouter>
