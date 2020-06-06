@@ -10,7 +10,6 @@ const Dashboard = () => (
     margin : "0 auto",
     flexDirection : "column"
   }}>
-  {}
     <AddTodo />
     <Footer />
     <VisibleTodoList />
