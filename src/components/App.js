@@ -1,7 +1,14 @@
-import React from "react";
-import Footer from "./Footer";
-import AddTodo from "../containers/AddTodo";
-import VisibleTodoList from "../containers/VisibleTodoList";
+import React, { Component } from 'react';
+import {
+  BrowserRouter,
+  Route,
+  Switch
+} from 'react-router-dom';
+
+import PrivateRoute from '../containers/PrivateRoute';
+import LoginPage from '../components/Login';
+import RegisterPage from '../components/Register';
+import DashboardPage from '../components/Dashboard';
 
 const App = () => (
   <div style={{
@@ -15,9 +22,16 @@ const App = () => (
       fontFamily : "Lato",
       color : '#ee91bc'
     }}>React-Redux TODO List</h1>
-    <AddTodo />
-    <Footer />
-    <VisibleTodoList />
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route path='/' exact={true} component={LoginPage} />
+            <Route path='/login' component={LoginPage} />
+            <Route path='/register' component={RegisterPage} />
+            <PrivateRoute path='/dashboard' component={DashboardPage} />
+          </Switch>
+        </div>
+      </BrowserRouter>
   </div>
 );
 
