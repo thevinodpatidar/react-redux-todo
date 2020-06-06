@@ -24,14 +24,14 @@ const App = () => (
       fontSize : "25px"
     }}>React-Redux TODO List</h1>
       <BrowserRouter>
-        <div>
+        {/* <div> */}
           <Switch>
             <Route path='/' exact={true} component={LoginPage} />
             <Route path='/login' component={LoginPage} />
             <Route path='/register' component={RegisterPage} />
             <Route path='/dashboard' component={DashboardPage} />
           </Switch>
-        </div>
+        {/* </div> */}
       </BrowserRouter>
   </div>
 );
