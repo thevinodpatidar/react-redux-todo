@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Route,
@@ -20,7 +20,8 @@ const App = () => (
     <h1 style={{
       textTransform : "uppercase",
       fontFamily : "Lato",
-      color : '#ee91bc'
+      color : '#ee91bc',
+      fontSize : "25px"
     }}>React-Redux TODO List</h1>
       <BrowserRouter>
         <div>

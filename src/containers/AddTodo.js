@@ -9,7 +9,8 @@ const AddTodo = ({ dispatch }) => {
        <div style={{
          display : "flex",
          flexDirection : "row",
-         marginBottom : '20px'
+         marginBottom : '20px',
+         marginTop : "10px"
         }}>
       <form onSubmit={e => {
         e.preventDefault()

@@ -8,6 +8,8 @@ const TodoList = ({ todos, toggleTodo }) => (
     flexDirection : "column",
     // justifyContent : "flex-start",
     listStyle : "none",
+    margin : "10px 0 0 0",
+    padding : 0
   }}>
     {todos.map(todo =>
       <Todo

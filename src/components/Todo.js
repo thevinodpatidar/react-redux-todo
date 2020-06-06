@@ -15,8 +15,9 @@ const Todo = ({ onClick, completed, text }) => (
       margin : "5px",
       opacity : completed ? ".5" : "1",
       borderRadius : "5px",
-      width : "300px",
-      wordWrap : "break-word"
+      width : "270px",
+      wordWrap : "break-word",
+      boxSizing : "border-box"
     }}
   >
     {text}
